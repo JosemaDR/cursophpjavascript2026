@@ -1,0 +1,31 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body > header {
+   display: grid;
+   grid-template-columns: 25% 1fr;
+   align-items: center;
+   justify-items: center;
+}
+
+h1 {
+   justify-self: start;
+}
+
+div.logo {
+   padding-right: 25px;
+   justify-self: end;
+}
+
+.logo > img {
+   width: 100px;
+   max-width: 100px;
+}
