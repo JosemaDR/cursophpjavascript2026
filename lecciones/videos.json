@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Introducci\u00f3n a PHP",
+        "duracion": "10:30",
+        "url": "https:\/\/example.com\/videos\/introduccion-php"
+    },
+    {
+        "titulo": "Manipulaci\u00f3n de Arrays en PHP",
+        "duracion": "15:45",
+        "url": "https:\/\/example.com\/videos\/manipulacion-arrays-php"
+    },
+    {
+        "titulo": "Conexi\u00f3n a Bases de Datos con PDO",
+        "duracion": "20:00",
+        "url": "https:\/\/example.com\/videos\/conexion-bases-datos-pdo"
+    },
+    {
+        "titulo": "Manejo de Formularios en PHP",
+        "duracion": "12:20",
+        "url": "https:\/\/example.com\/videos\/manejo-formularios-php"
+    }
+]

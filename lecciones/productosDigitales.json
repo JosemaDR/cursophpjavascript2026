@@ -1,0 +1,12 @@
+{
+	"productos": [
+		{
+			"nombre": "E-book",
+			"precio": 9.99
+		},
+		{
+			"nombre": "Curso en línea",
+			"precio": 49.99
+		}
+	]
+}
