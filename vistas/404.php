@@ -9,7 +9,7 @@
       <p>❌ ¡Ups! No se han encontrado lo que estás buscando.</p>
       <p>
          Si quieres prueba a ir de nuevo al inicio de la aplicación para no perderte:
-         <a href="<?php echo $config['rutaAPPWeb'];?>">
+         <a href="<?php echo Config::getRutaAPPWeb();?>">
             👉 Ir al inicio de la Tienda virtual de recursos digitales
          </a>
       </p>
