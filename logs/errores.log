@@ -1,0 +1,40 @@
+[30-Mar-2026 20:06:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Config::usuario() in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:7
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once()
+#1 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php on line 7
+[30-Mar-2026 20:13:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Config::otracosa() in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:8
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once()
+#1 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php on line 8
+[30-Mar-2026 20:35:05 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:36:59 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:37:01 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:37:01 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:37:01 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:37:01 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:37:01 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:38:40 Europe/Berlin] Call to undefined method Config::ljlkjlkj()
+[30-Mar-2026 20:40:19 Europe/Berlin] Error: Call to undefined method Config::ljlkjlkj() in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:8
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once()
+#1 {main}
+[30-Mar-2026 21:10:49 Europe/Berlin] Error: Call to undefined method Config::ljlkjlkj() in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:8
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once()
+#1 {main}
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP Warning:  Undefined variable $e in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php on line 14
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP Stack trace:
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP   1. {main}() D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php:0
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP   2. require_once() D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php:4
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP Deprecated:  error_log(): Passing null to parameter #1 ($message) of type string is deprecated in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php on line 14
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP Stack trace:
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP   1. {main}() D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php:0
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP   2. require_once() D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php:4
+[30-Mar-2026 21:15:19 Europe/Berlin] PHP   3. error_log($message = NULL, $message_type = 0, $destination = 'D:\\CASTRAINING\\XAMPP82\\htdocs\\CURSO/logs/errores.log') D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:14
+[30-Mar-2026 21:15:19 Europe/Berlin] 
+[30-Mar-2026 21:19:55 Europe/Berlin] DivisionByZeroError: Division by zero in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:8
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once()
+#1 {main}

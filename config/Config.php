@@ -1,21 +1,27 @@
 <?php
    defined('APP_ROOT') or header('Location: ../index.php');
 
-   // Atributos, propiedades, características, son datos que describen a un objeto.
-   // Métodos, funciones, acciones, son comportamientos que un objeto puede realizar.
    class Config {
       const NOMBRE_APP = 'Tienda virtual del curso de PHP';
       const APP_ENTORNO = '.env';
 
-      // El principio de la POO de Encapsulación indica que todos sus atributos o propiedades deben ser
-      // privados.
       private static $rutaAPPWeb = '';
       private static $dbData = Array();
       private static $entornoActual = 'local';
 
       public static function init() {
-         self::setRutaAPPWeb();
-         self::getConfigurationData();
+         try {
+            self::setRutaAPPWeb();
+            self::getConfigurationData();
+            self::setErrorsConfiguration();      
+         } catch (Exception $e) {
+            echo 'Gestionando Excepción:', $e;
+         } catch (Error $e) {
+            echo 'Gestionando Error:', $e;
+         } finally {
+            empty($e) ?: error_log($e, 0, APP_ROOT . '/logs/errores.log');
+            //$e ?? error_log($e, 0, APP_ROOT . '/logs/errores.log');
+         }
       }
 
       public static function setRutaAPPWeb() {
@@ -27,7 +33,6 @@
 
          $uri .= $_SERVER['HTTP_HOST'];
 
-         // $_SERVER['PHP_SELF'] ---> Ofrece el mismo dato que $_SERVER['SCRIPT_NAME'].
          $scriptEjecutandoseMasCarpeta = $_SERVER['SCRIPT_NAME'];
          $soloScriptEjecutandose = basename($_SERVER['SCRIPT_NAME']);
          $folderAPP = str_replace($soloScriptEjecutandose, '', $scriptEjecutandoseMasCarpeta);
@@ -39,15 +44,27 @@
       }
 
       public static function getConfigurationData() {
-         if(file_exists(self::APP_ENTORNO)) {
-            $contenidoEnv = file_get_contents(self::APP_ENTORNO);
-            $env = explode('=', $contenidoEnv);
-            self::$entornoActual = $env[1];
+         try {
+            if(file_exists(self::APP_ENTORNO)) {
+               $contenidoEnv = file_get_contents(self::APP_ENTORNO);
+               $env = explode('=', $contenidoEnv);
+               self::$entornoActual = $env[1];
 
-            $ficheroConfiguracion = self::APP_ENTORNO . '.' . $env[1];
-            $datosConfig = parse_ini_file($ficheroConfiguracion, true);
+               $ficheroConfiguracion = self::APP_ENTORNO . '.' . $env[1];
+               $datosConfig = parse_ini_file($ficheroConfiguracion, true);
 
-            self::$dbData = $datosConfig['BASE DE DATOS'];
+               self::$dbData = $datosConfig['BASE DE DATOS'];
+            } else {
+               throw new NoEnvFile('No existe el fichero de configuración general del entorno');
+            }
+         } catch(NoEnvFile $e) {
+            echo $e->getMessage();
+            // Podría poner el código para crear el fichero .env y redireccionar para que cargue de nuevo la petición
+            // que hizo el usuario.
+         } catch(Exception $e) {
+            echo $e->getMessage();
+         } catch(Error $e) {
+            echo $e->getMessage();
          }
       }
 
@@ -78,11 +95,14 @@
                error_reporting(E_ALL);
                ini_set('display_errors', 1);
                ini_set('display_startup_errors', 1);
+               ini_set('log_errors', 1);
+               ini_set('error_log', APP_ROOT . '/logs/errores.log');
                break;
             case 'prod':
                error_reporting(E_ALL);
                ini_set('display_errors', 0);
                ini_set('log_errors', 1);
+               ini_set('error_log', APP_ROOT . '/logs/errores.log');
                break;
          }
       }
