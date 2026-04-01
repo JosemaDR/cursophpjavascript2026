@@ -13,7 +13,7 @@
          try {
             self::setRutaAPPWeb();
             self::getConfigurationData();
-            self::setErrorsConfiguration();      
+            self::setErrorsConfiguration();
          } catch (Exception $e) {
             echo 'Gestionando Excepción:', $e;
          } catch (Error $e) {
@@ -69,6 +69,7 @@
       }
 
       public static function getDatabaseConfiguration() {
+         var_dump(self::$dbData);
          return self::$dbData;
       }
       public static function getDBEngine() {
