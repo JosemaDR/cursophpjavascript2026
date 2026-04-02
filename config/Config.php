@@ -1,7 +1,7 @@
 <?php
    defined('APP_ROOT') or header('Location: ../index.php');
 
-   class Config {
+   class Config implements ListenerInterface {
       const NOMBRE_APP = 'Tienda virtual del curso de PHP';
       const APP_ENTORNO = '.env';
 
@@ -69,7 +69,6 @@
       }
 
       public static function getDatabaseConfiguration() {
-         var_dump(self::$dbData);
          return self::$dbData;
       }
       public static function getDBEngine() {
@@ -106,5 +105,9 @@
                ini_set('error_log', APP_ROOT . '/logs/errores.log');
                break;
          }
+      }
+
+      public function handle($data) {
+         // TODO.
       }
    }

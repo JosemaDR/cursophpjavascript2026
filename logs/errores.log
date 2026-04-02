@@ -38,3 +38,14 @@ Stack trace:
 Stack trace:
 #0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once()
 #1 {main}
+[01-Apr-2026 19:48:49 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php:16
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php(16): fopen('asdfadsf')
+#1 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once('D:\\CASTRAINING\\...')
+#2 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php on line 16
+[01-Apr-2026 19:50:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: ErrorManager::{closure}(): Argument #1 ($e) must be of type Exception, ArgumentCountError given in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\ErrorManager.php:10
+Stack trace:
+#0 [internal function]: ErrorManager::{closure}(Object(ArgumentCountError))
+#1 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\ErrorManager.php on line 10
