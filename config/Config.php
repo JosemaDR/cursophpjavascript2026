@@ -1,15 +1,26 @@
 <?php
    defined('APP_ROOT') or header('Location: ../index.php');
 
-   class Config implements ListenerInterface {
+   require_once APP_ROOT . '/Exceptions/Errores/RutaNoExistente.php';
+
+   class Config {
       const NOMBRE_APP = 'Tienda virtual del curso de PHP';
       const APP_ENTORNO = '.env';
 
       private static $rutaAPPWeb = '';
       private static $dbData = Array();
       private static $entornoActual = 'local';
+      private static $dispatcher;
+
+      public static function test() {
+         echo 'No me lo esperaba';
+      }
 
       public static function init() {
+         self::$dispatcher = new EventDispatcher();
+
+         self::$dispatcher->suscribe('config.ruta.inexistente', new RutaNoExistente());
+
          try {
             self::setRutaAPPWeb();
             self::getConfigurationData();
@@ -58,9 +69,7 @@
                throw new NoEnvFile('No existe el fichero de configuración general del entorno');
             }
          } catch(NoEnvFile $e) {
-            echo $e->getMessage();
-            // Podría poner el código para crear el fichero .env y redireccionar para que cargue de nuevo la petición
-            // que hizo el usuario.
+            self::$dispatcher->dispatch('config.ruta.inexistente', $e);
          } catch(Exception $e) {
             echo $e->getMessage();
          } catch(Error $e) {
@@ -105,9 +114,5 @@
                ini_set('error_log', APP_ROOT . '/logs/errores.log');
                break;
          }
-      }
-
-      public function handle($data) {
-         // TODO.
       }
    }

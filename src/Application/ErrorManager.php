@@ -5,8 +5,8 @@
       // Hacemos uso de arquitectura orientada a eventos.
       private static $dispatcher;
 
-      public static function register(EventDispatcher $dispatcher) {
-         self::$dispatcher = $dispatcher;
+      public static function register() {
+         self::$dispatcher = new EventDispatcher();
 
          set_error_handler(function($level, $message, $file, $line) {
             if(!(error_reporting() & $level)) return;
@@ -15,11 +15,9 @@
          });
 
          set_exception_handler([self::class, 'handleException']);
-         // set_exception_handler([$this, 'handleException']);
       }
 
       public static function handleException (Throwable $e) {
-         self::$dispatcher->dispatch('app.error_ocurred', $e);
          self::renderResponse($e);
          exit;
       }

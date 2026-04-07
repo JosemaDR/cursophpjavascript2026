@@ -3,6 +3,8 @@
 
    require_once APP_ROOT . '/vistas/head.generico.php';
    require_once APP_ROOT . '/vistas/header.generico.php';
+
+      var_dump(Config::class);
 ?>
 
    <main>
