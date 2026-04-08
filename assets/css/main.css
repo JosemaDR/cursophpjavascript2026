@@ -20,6 +20,11 @@ h1 {
    justify-self: start;
 }
 
+main > h2, main > form {
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
 div.logo {
    padding-right: 25px;
    justify-self: end;

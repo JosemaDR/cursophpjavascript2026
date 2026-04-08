@@ -9,6 +9,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title><?php echo Config::NOMBRE_APP; ?></title>
    <link rel="stylesheet" href="<?php echo Config::getRutaAPPWeb();?>assets/css/main.css">
-   <script src="<?php echo Config::getRutaAPPWeb();?>assets/js/main.js"></script>
+   <script src="<?php echo Config::getRutaAPPWeb();?>assets/js/main.js" defer></script>
 </head>
 <body>
