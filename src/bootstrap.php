@@ -8,13 +8,14 @@
    require_once APP_ROOT . '/src/Application/ErrorManager.php';
    require_once APP_ROOT . '/config/Config.php';
    require_once APP_ROOT . '/src/Infrastructure/PDO.php';
-   require_once APP_ROOT . '/src/Application/Controllers/GestorRutas.php';
+   require_once APP_ROOT . '/src/Infrastructure/Routing/GestorRutas.php';
 
    ErrorManager::register();
 
    Config::init();
 
-   GestorRutas::cargarVista();
+   GestorRutas::init();
+   GestorRutas::getController(new EventDispatcher());
 
    // $conn = new PDOAPP();
    // $conn->conectar();

@@ -8,7 +8,7 @@
    <main>
       <h2>Formulario de contacto</h2>
 
-      <form action="" method="post" style="width:50%;" onsubmit="validarFormulario();">
+      <form action="" method="post" style="width:50%;" onsubmit="return validarFormulario(event);">
          <fieldset style="margin:30px;">
             <legend>Su nombre y apellidos, por favor:</legend>
             <input type="text"
@@ -64,8 +64,7 @@
             value="Enviar mensaje"
             name="enviarMensaje"
             id="enviarMensaje"
-            style="margin-left:30px;"
-            onclick="validarFormulario();" />
+            style="margin-left:30px;" />
       </form>
    </main>
 

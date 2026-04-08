@@ -1,4 +1,6 @@
-function validarFormulario() {
+function validarFormulario(eventoEnvio) {
+   eventoEnvio.preventDefault();
+
    const inputNombre = document.getElementById('nombreContacto');
    const inputApellidos = document.getElementById('apellidosContacto');
    const inputEmail = document.getElementById('emailContacto');
