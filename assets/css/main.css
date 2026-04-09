@@ -34,3 +34,12 @@ div.logo {
    width: 100px;
    max-width: 100px;
 }
+
+.msgBox {
+   display: none;
+   margin: 25px;
+   padding: 10px;
+   border: 3px solid red;
+   border-radius: 5px;
+   color:red;
+}

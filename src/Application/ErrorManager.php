@@ -2,7 +2,6 @@
    defined('APP_ROOT') or header('Location: ../index.php');
 
    class ErrorManager {
-      // Hacemos uso de arquitectura orientada a eventos.
       private static $dispatcher;
 
       public static function register() {

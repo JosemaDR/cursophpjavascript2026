@@ -15,7 +15,7 @@
    Config::init();
 
    GestorRutas::init();
-   GestorRutas::getController(new EventDispatcher());
+   GestorRutas::getController();
 
    // $conn = new PDOAPP();
    // $conn->conectar();

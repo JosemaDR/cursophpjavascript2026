@@ -7,11 +7,11 @@
       const NOMBRE_APP = 'Tienda virtual del curso de PHP';
       const APP_ENTORNO = '.env';
 
-      private static $rutaAPPWeb = '';
-      private static $rutas = Array();
-      private static $dbData = Array();
-      private static $entornoActual = 'local';
-      private static $dispatcher;
+      private static string $rutaAPPWeb = '';
+      private static array $rutas = Array();
+      private static array $dbData = Array();
+      private static string $entornoActual = 'local';
+      private static EventDispatcher $dispatcher;
 
       public static function init() {
          self::$dispatcher = new EventDispatcher();

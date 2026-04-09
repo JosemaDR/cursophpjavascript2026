@@ -15,7 +15,7 @@
          self::$dispatcher->suscribe('app.recurso_no_encontrado', new _404Listener());
       }
 
-      public static function getController(EventDispatcher $dispatcher) {
+      public static function getController() {
          /*
          $_SERVER['PATH_INFO'] ?? '': El operador null coalescing gestiona el caso de que la clave no exista
          (evitando el Notice), devolviendo una cadena vacía en su lugar.

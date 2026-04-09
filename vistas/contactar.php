@@ -16,24 +16,24 @@
                title="Indique su nombre"
                name="nombreContacto"
                id="nombreContacto"
-               required />
+                />
             <input type="text"
                placeholder="Indique sus apellidos"
                title="Indique sus apellidos"
                name="apellidos"
                id="apellidosContacto"
-               required />
+                />
          </fieldset>
 
          <section style="margin:30px;">
             <label for="emailContacto">
                Su email:
-               <input type="email"
+               <input type="text"
                placeholder="email@email.com"
                title="Escriba aquí su correo electrónico"
                name="emailContacto"
                id="emailContacto"
-               required />
+                />
             </label>
          </section>
 
@@ -45,7 +45,7 @@
                   title="Indique el motivo de su contacto"
                   name="asuntoContacto"
                   id="asuntoContacto"
-                  required />
+                   />
             </label>
          </section>
 
@@ -56,7 +56,7 @@
                   title="Escriba el mensaje"
                   name="mensajeContacto"
                   id="mensajeContacto"
-                  required></textarea>
+                  ></textarea>
             </label>
          </section>
 
@@ -65,6 +65,8 @@
             name="enviarMensaje"
             id="enviarMensaje"
             style="margin-left:30px;" />
+         
+         <section class="msgBox"></section>
       </form>
    </main>
 
