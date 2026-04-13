@@ -7,7 +7,9 @@ function validarFormulario(eventoEnvio) {
    const inputAsunto = document.getElementById('asuntoContacto');
    const inputMensaje = document.getElementById('mensajeContacto');
 
-   const nombreRegex = /^[A-Z][a-zA-Z][a-zA-Z]+$/;
+   // Las expresiones regulares nos aportan validación de la información que se necesita en cada campo,
+   // más el hecho de controlar si se ha introducido o no algún valor realmente.
+   const nombreRegex = /^[a-zA-Z]+$/;
    const apellidosRegex = /^[a-zA-Z]+$/;
    const asuntoRegex = /^[a-zA-Z0-9\s]+$/;
    const mensajeRegex = /^[a-zA-Z0-9\s]+$/;
@@ -29,22 +31,6 @@ function validarFormulario(eventoEnvio) {
       errores.push('El campo "Mensaje" no es válido. Solo se permiten caracteres alfanuméricos sin espacios ni símbolos.');
    }
 
-/*   if (inputNombre.value.trim() === '') {
-      errores.push('El campo "Nombre" es obligatorio.');
-   }
-   if (inputApellidos.value.trim() === '') {
-      errores.push('El campo "Apellidos" es obligatorio.');
-   }
-   if (inputEmail.value.trim() === '') {
-      errores.push('El campo "Email" es obligatorio.');
-   }
-   if (inputAsunto.value.trim() === '') {
-      errores.push('El campo "Asunto" es obligatorio.');
-   }
-   if (inputMensaje.value.trim() === '') {
-      errores.push('El campo "Mensaje" es obligatorio.');
-   }*/
-
    if (errores.length > 0) {
       eventoEnvio.preventDefault();
 
@@ -54,13 +40,6 @@ function validarFormulario(eventoEnvio) {
       $numError = 0;
       msgBox.innerHTML = '❌ ' + errores.join('<br>❌ ');
 
-      // for (let i = 0; i < errores.length; i++) {
-      //    msgBox.innerHTML += '❌ ' + errores[i] + '<br>';
-      // }
-
       return false;
-   } else {
-      alert('Formulario enviado correctamente.');
-      return true;
    }
 }

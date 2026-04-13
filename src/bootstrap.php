@@ -7,7 +7,7 @@
    require_once APP_ROOT . '/src/Infrastructure/Logging/Logger.php';
    require_once APP_ROOT . '/src/Application/ErrorManager.php';
    require_once APP_ROOT . '/config/Config.php';
-   require_once APP_ROOT . '/src/Infrastructure/PDO.php';
+   require_once APP_ROOT . '/src/Infrastructure/Database/PDO.php';
    require_once APP_ROOT . '/src/Infrastructure/Routing/GestorRutas.php';
 
    ErrorManager::register();

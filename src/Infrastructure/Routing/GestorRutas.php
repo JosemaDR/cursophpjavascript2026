@@ -15,6 +15,10 @@
          self::$dispatcher->suscribe('app.recurso_no_encontrado', new _404Listener());
       }
 
+      public static function getRutaActual() {
+         self::$urlPartes[0];
+      }
+
       public static function getController() {
          /*
          $_SERVER['PATH_INFO'] ?? '': El operador null coalescing gestiona el caso de que la clave no exista
@@ -29,6 +33,7 @@
          Con esta línea de abajo, evitamos los ifs y varias líneas de código adicional.
          */
          self::$url = trim($_SERVER['PATH_INFO'] ?? '', '/') ?: 'root';
+         if(self::$url === 'inicio') self::$url = 'root';
 
          self::$urlPartes = explode('/', self::$url);
          if(array_key_exists(self::$urlPartes[0], self::$rutasDisponibles)) {

@@ -10,6 +10,9 @@
    </header>
    <nav>
       <a href="<?php echo Config::getRutaAPPWeb();?>index.php/">Inicio</a>
-      <a href="<?php echo Config::getRutaAPPWeb();?>index.php/carrito">Carrito</a>
+      <a href="<?php echo Config::getRutaAPPWeb();?>index.php/catalogo">Catalogo</a>
       <a href="<?php echo Config::getRutaAPPWeb();?>index.php/contactar">Contactar</a>
+      <a href="<?php echo Config::getRutaAPPWeb();?>index.php/login">🚪 Entrar</a>
+      <span> | </span>
+      <a href="<?php echo Config::getRutaAPPWeb();?>index.php/carrito" title="Carrito de la compra">🛒</a>
    </nav>

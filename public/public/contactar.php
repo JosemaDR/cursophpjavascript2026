@@ -8,7 +8,7 @@
    <main>
       <h2>Formulario de contacto</h2>
 
-      <form action="" method="post" style="width:50%;" onsubmit="return validarFormulario(event);">
+      <form action="<?php echo Config::getRutaAPPWeb() . 'index.php/enviarmensaje'; ?>" method="post" style="width:50%;" onsubmit="return validarFormulario(event);">
          <fieldset style="margin:30px;">
             <legend>Su nombre y apellidos, por favor:</legend>
             <input type="text"
@@ -16,13 +16,13 @@
                title="Indique su nombre"
                name="nombreContacto"
                id="nombreContacto"
-                />
+               required />
             <input type="text"
                placeholder="Indique sus apellidos"
                title="Indique sus apellidos"
                name="apellidos"
                id="apellidosContacto"
-                />
+               required />
          </fieldset>
 
          <section style="margin:30px;">
@@ -33,7 +33,7 @@
                title="Escriba aquí su correo electrónico"
                name="emailContacto"
                id="emailContacto"
-                />
+               required />
             </label>
          </section>
 
@@ -45,7 +45,7 @@
                   title="Indique el motivo de su contacto"
                   name="asuntoContacto"
                   id="asuntoContacto"
-                   />
+                  required />
             </label>
          </section>
 
@@ -56,7 +56,7 @@
                   title="Escriba el mensaje"
                   name="mensajeContacto"
                   id="mensajeContacto"
-                  ></textarea>
+                  required></textarea>
             </label>
          </section>
 
@@ -69,9 +69,6 @@
          <section class="msgBox"></section>
       </form>
    </main>
-
 <?php
-   var_dump($_GET);
-   var_dump($_POST);
    require_once APP_ROOT . '/vistas/footer.generico.php';
 ?>

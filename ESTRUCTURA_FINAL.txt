@@ -1,0 +1,111 @@
+CURSO
+|- .gitignore
+|- index.php
+|- script.sql
+
+|- public >
+   |- assets >
+      |- css >
+         |- main.css
+      |- img >
+         |- logo.jpg
+      |- js >
+         |- carrito.js
+         |- main.js
+
+   |- errores >
+      |- 404.php
+      |- 500.php
+   |- admin >
+   |- public >
+      |- carrito.php
+      |- catalogo.php
+      |- contactar.php
+      |- contactoEnviado.php
+      |- footer.generico.php
+      |- head.generico.php
+      |- header.generico.php
+      |- inicio.php
+      |- producto.alta.php
+      |- producto.editar.php
+      |- producto.eliminar.php
+      |- producto.php
+
+|- config >
+   |- Events >
+      |- Listeners >
+   |- Exceptions >
+      |- NoEnvFile.php   
+   |- Config.php
+   |- .env
+   |- .env.dev
+   |- .env.local
+   |- .env.pre
+   |- .env.prod
+   |- .htaccess
+
+|- lecciones >
+
+|- logs >
+   |- errores.log
+   |- .htaccess
+
+|- src >
+   |- Application >
+      |- Services >
+         |- Database >
+      |- Events >
+         |- Listeners >
+         |- EventDispatcher.php
+         |- ListenerInterface.php
+      |- Views >
+         |- Events >
+            |- Listeners >
+         |- Exceptions >
+         |- Views.php
+      |- Exceptions >
+
+   |- Domain >
+      |- Exceptions.php
+   |- Infrastructure >
+      |- Services >
+         |- Database >     
+      |- Errors >
+         |- Events >
+            |- Listeners >
+         |- Exceptions >  
+         |- ErrorManager.php
+      |- Http >
+         |- Controllers >
+            |- Events >
+               |- Listeners >
+            |- Exceptions >
+            |- CarritoController.php
+            |- CatalogoController.php
+            |- ContactarController.php
+            |- ContactarPOSTController.php
+            |- InicioController.php
+            |- ProductoController.php
+      |- Logging >
+         |- Events >
+            |- Listeners >
+         |- Exceptions >
+         |- Logger.php
+      |- Routing >
+         |- Events >
+            |- Listeners >
+               |- _404Listener.php
+               |- RutaNoExistenteListener.php
+         |- Exceptions >
+         |- GestorRutas.php
+      |- Database >
+         |- Events >
+            |- Listeners >
+         |- Exceptions >
+         |- Models >
+            |- CatalogoModel.php
+            |- ProductoModel.php
+         |- DatabaseConnection.php
+
+   |- bootstrap.php
+   |- .htaccess

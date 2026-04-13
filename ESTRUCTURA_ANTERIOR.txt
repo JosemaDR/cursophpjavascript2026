@@ -1,0 +1,77 @@
+CURSO
+|- .env
+|- .env.dev
+|- .env.local
+|- .env.pre
+|- .env.prod
+|- .gitignore
+|- index.php
+|- script.sql
+
+|- assets >
+   |- css >
+      |- main.css
+   |- img >
+      |- logo.jpg
+   |- js >
+      |- carrito.js
+      |- main.js
+
+|- config >
+   |- Config.php
+
+|- Exceptions >
+   |- Errores >
+   |- Exceptions >
+
+|- lecciones >
+
+|- logs >
+   |- errores.logo
+
+|- src >
+   |- Application >
+      |- Events >
+      |- Views >
+      |- ErrorManager.php
+   |- Controllers >
+      |- CarritoController.php
+      |- CatalogoController.php
+      |- ContactarController.php
+      |- ContactarPOSTController.php
+      |- InicioController.php
+      |- ProductoController.php
+   |- Domain >
+      |- Exceptions.php
+   |- Infrastructure >
+      |- Logging >
+         |- Logger.php
+      |- Routing >
+         |- Listeners >
+            |- _404Listener.php
+            |- RutaNoExistenteListener.php
+         |- GestorRutas.php
+      |- PDO.php
+   |- Models >
+      |- CatalogoModel.php
+      |- ProductoMode.php
+   |- bootstrap.php
+
+|- vistas >
+   |- errores >
+      |- 404.php
+      |- 500.php
+   |- admin >
+   |- public >
+      |- carrito.php
+      |- catalogo.php
+      |- contactar.php
+      |- contactoEnviado.php
+      |- footer.generico.php
+      |- head.generico.php
+      |- header.generico.php
+      |- inicio.php
+      |- producto.alta.php
+      |- producto.editar.php
+      |- producto.eliminar.php
+      |- producto.php
