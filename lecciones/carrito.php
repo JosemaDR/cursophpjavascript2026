@@ -79,20 +79,20 @@ const Carrito = {
          html += `
                <tr>
                   <td>
-                     <strong>${item.nombre}</strong><br>
-                     <small>${item.desc}</small>
+                     <strong>""{item.nombre}</strong><br>
+                     <small>""{item.desc}</small>
                   </td>
-                  <td>${item.precio.toFixed(2)}€</td>
+                  <td>""{item.precio.toFixed(2)}€</td>
                   <td>
                      <div class="controles-unidades">
-                           <button onclick="Carrito.cambiarUnidades(${item.id}, -1)">-</button>
-                           <span class="unidades-valor">${item.unidades}</span>
-                           <button onclick="Carrito.cambiarUnidades(${item.id}, 1)">+</button>
+                           <button onclick="Carrito.cambiarUnidades(""{item.id}, -1)">-</button>
+                           <span class="unidades-valor">""{item.unidades}</span>
+                           <button onclick="Carrito.cambiarUnidades(""{item.id}, 1)">+</button>
                      </div>
                   </td>
-                  <td><strong>${subtotal}€</strong></td>
+                  <td><strong>""{subtotal}€</strong></td>
                   <td>
-                     <button class="btn-borrar" onclick="Carrito.eliminarLinea(${item.id})">Eliminar</button>
+                     <button class="btn-borrar" onclick="Carrito.eliminarLinea(""{item.id})">Eliminar</button>
                   </td>
                </tr>
          `;
@@ -104,7 +104,7 @@ const Carrito = {
                <tfoot>
                   <tr>
                      <td colspan="3" style="text-align:right"><strong>TOTAL COMPRA:</strong></td>
-                     <td colspan="2"><span class="total-grande">${this.calcularTotalCarrito().toFixed(2)}€</span></td>
+                     <td colspan="2"><span class="total-grande">""{this.calcularTotalCarrito().toFixed(2)}€</span></td>
                   </tr>
                </tfoot>
          </table>
