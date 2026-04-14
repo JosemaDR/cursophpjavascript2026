@@ -28,7 +28,7 @@
             echo '<pre>', $e->getTraceAsString(), '</pre>';
          } else {
             http_response_code(500);
-            require_once APP_ROOT . '/vistas/errores/500.php';
+            require_once APP_ROOT . '/public/public/errores/500.php';
          }
       }
    }

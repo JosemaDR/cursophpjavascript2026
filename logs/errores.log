@@ -49,3 +49,15 @@ Stack trace:
 #0 [internal function]: ErrorManager::{closure}(Object(ArgumentCountError))
 #1 {main}
   thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\ErrorManager.php on line 10
+[14-Apr-2026 10:18:24 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 10:21:53 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 10:59:10 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:30:40 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:32:29 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:32:34 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:32:37 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:33:13 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:35:17 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:35:24 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:37:30 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[14-Apr-2026 11:41:40 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).

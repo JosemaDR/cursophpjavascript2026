@@ -5,7 +5,7 @@
 
    class Config {
       const NOMBRE_APP = 'Tienda virtual del curso de PHP';
-      const APP_ENTORNO = '.env';
+      const APP_ENTORNO = APP_ROOT . '/config/.env';
 
       private static string $rutaAPPWeb = '';
       private static array $rutas = Array();
@@ -28,7 +28,6 @@
             echo 'Gestionando Error:', $e;
          } finally {
             empty($e) ?: error_log($e, 0, APP_ROOT . '/logs/errores.log');
-            //$e ?? error_log($e, 0, APP_ROOT . '/logs/errores.log');
          }
       }
 

@@ -5,6 +5,6 @@
       public function handle($data) {
          http_response_code(404);
          header('Content-Type: text/html; charset=utf-8');
-         require_once APP_ROOT . '/vistas/errores/404.php';
+         require_once APP_ROOT . '/public/public/errores/404.php';
       }
    }

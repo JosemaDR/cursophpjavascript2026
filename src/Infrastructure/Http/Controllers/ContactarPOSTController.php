@@ -10,5 +10,5 @@
    isset($_POST['asuntoContacto']) && strlen($_POST['asuntoContacto']) > 0 &&
    isset($_POST['mensajeContacto']) && strlen($_POST['mensajeContacto']) > 0 &&
    isset($_POST['mensajeContacto'])) {
-      require_once APP_ROOT . '/vistas/contactoEnviado.php';
+      require_once APP_ROOT . '/public/templates/publicTemplates/contactoEnviado.php';
    }

@@ -12,24 +12,25 @@ CURSO
       |- js >
          |- carrito.js
          |- main.js
-
-   |- errores >
-      |- 404.php
-      |- 500.php
-   |- admin >
-   |- public >
-      |- carrito.php
-      |- catalogo.php
-      |- contactar.php
-      |- contactoEnviado.php
-      |- footer.generico.php
-      |- head.generico.php
-      |- header.generico.php
-      |- inicio.php
-      |- producto.alta.php
-      |- producto.editar.php
-      |- producto.eliminar.php
-      |- producto.php
+   
+   |- templates >
+      |- adminTemplates >
+      |- publicTemplates >
+         |- errores >
+         |- 404.php
+         |- 500.php
+         |- carrito.php
+         |- catalogo.php
+         |- contactar.php
+         |- contactoEnviado.php
+         |- footer.generico.php
+         |- head.generico.php
+         |- header.generico.php
+         |- inicio.php
+         |- producto.alta.php
+         |- producto.editar.php
+         |- producto.eliminar.php
+         |- producto.php
 
 |- config >
    |- Events >
@@ -65,7 +66,14 @@ CURSO
          |- Views.php
       |- Exceptions >
 
+   // Los datos (Dominio), son el motor de la APP, independientemente de que tecnología usemos para gestionarlos.
    |- Domain >
+      |- Events >
+         |- Listeners >
+      |- Exceptions > 
+      |- Models >
+         |- CatalogoModel.php
+         |- ProductoModel.php
       |- Exceptions.php
    |- Infrastructure >
       |- Services >
@@ -73,7 +81,7 @@ CURSO
       |- Errors >
          |- Events >
             |- Listeners >
-         |- Exceptions >  
+         |- Exceptions > 
          |- ErrorManager.php
       |- Http >
          |- Controllers >
@@ -102,9 +110,6 @@ CURSO
          |- Events >
             |- Listeners >
          |- Exceptions >
-         |- Models >
-            |- CatalogoModel.php
-            |- ProductoModel.php
          |- DatabaseConnection.php
 
    |- bootstrap.php

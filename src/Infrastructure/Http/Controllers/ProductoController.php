@@ -1,7 +1,7 @@
 <?php
    defined('APP_ROOT') or header('Location: ../index.php');
 
-   require_once APP_ROOT . '/src/Models/ProductoModel.php';
+   //require_once APP_ROOT . '/src/Models/ProductoModel.php';
 
    if(count($urlPartes) >= 3) {
       switch($urlPartes[1]) {
@@ -20,17 +20,17 @@
    }
 
    function altaProducto(){
-      require_once APP_ROOT . '/vistas/producto.alta.php';
+      require_once APP_ROOT . '/public/templates/publicTemplates/producto.alta.php';
    }
 
    function editarProducto($producto){
-      require_once APP_ROOT . '/vistas/producto.editar.php';
+      require_once APP_ROOT . '/public/templates/publicTemplates/producto.editar.php';
    }
 
    function eliminarProducto($producto){
-      require_once APP_ROOT . '/vistas/producto.eliminar.php';
+      require_once APP_ROOT . '/public/templates/publicTemplates/producto.eliminar.php';
    }
 
    function verProducto($producto){
-      require_once APP_ROOT . '/vistas/producto.php';
+      require_once APP_ROOT . '/public/templates/publicTemplates/producto.php';
    }

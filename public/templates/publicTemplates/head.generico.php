@@ -8,12 +8,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title><?php echo Config::NOMBRE_APP; ?></title>
-   <link rel="stylesheet" href="<?php echo Config::getRutaAPPWeb();?>assets/css/main.css">
-   <script src="<?php echo Config::getRutaAPPWeb();?>assets/js/main.js" defer></script>
+   <link rel="stylesheet" href="<?php echo Config::getRutaAPPWeb();?>public/assets/css/main.css">
+   <script src="<?php echo Config::getRutaAPPWeb();?>public/assets/js/main.js" defer></script>
 <?php
-   //var_dump(GestorRutas::getRutaActual());
    if(isset($_SERVER['PATH_INFO']) && $_SERVER['PATH_INFO'] === '/carrito') {
-      echo '<script src="' . Config::getRutaAPPWeb() . 'assets/js/carrito.js" defer></script>';
+      echo '<script src="' . Config::getRutaAPPWeb() . 'public/assets/js/carrito.js" defer></script>';
    }
 ?>
 </head>
