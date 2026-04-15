@@ -21,13 +21,10 @@
       }
 
       public static function getAccionActual(): string {
-         $accion = '';
          return self::$urlPartes[1] ?? '';
       }
 
       public static function getController() {
-         $controladorTmp = '';
-
          self::$url = trim($_SERVER['PATH_INFO'] ?? '', '/') ?: 'root';
          if(self::$url === 'inicio') self::$url = 'root';
 
@@ -39,7 +36,9 @@
             $clase = $nombreBase . 'Controller';
 
             require_once APP_ROOT . '/src/Infrastructure/Http/Controllers/' . $fichero;
-            self::$controller = new $clase();
+
+            $data['vista'] = $nombreBase;
+            self::$controller = new $clase($data);
          } else {
             self::$dispatcher->dispatch('app.recurso_no_encontrado', self::$urlPartes[0]);
             exit;

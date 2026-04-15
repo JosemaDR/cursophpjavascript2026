@@ -5,16 +5,16 @@
       protected string $accion;
       protected string $recurso;
 
-      public function __construct() {
+      public function __construct(array $data = []) {
          $this->accion = GestorRutas::getAccionActual();
          $this->recurso = GestorRutas::getRutaActual();
          
          // Ejecutamos index automáticamente en todos los hijos
-         $this->index();
+         $this->index($data);
       }
 
       // Forzamos a que todos los controladores tengan un index
-      abstract public function index();
+      abstract public function index(array $data = []);
 
       // Método centralizado para llamar a la vista
       protected function renderView(array $data = [], bool $isAdmin = false) {

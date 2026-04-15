@@ -15,7 +15,7 @@
       }
 
       public static function render(string $accion, bool $admin = false, array $data = []) {
-         $vista = GestorRutas::getRutaActual();
+         $vista = $data['vista'];
          $accion === '' ?: ($accion = '.' . $accion);
 
          // Definimos la ruta física al archivo de la vista

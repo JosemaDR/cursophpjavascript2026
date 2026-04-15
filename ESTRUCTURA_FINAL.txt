@@ -17,8 +17,8 @@ CURSO
       |- adminTemplates >
       |- publicTemplates >
          |- errores >
-         |- 404.php
-         |- 500.php
+            |- 404.php
+            |- 500.php
          |- carrito.php
          |- catalogo.php
          |- contactar.php
@@ -71,9 +71,25 @@ CURSO
       |- Events >
          |- Listeners >
       |- Exceptions > 
+      
+      // Ponemos interfaces que definen qué se puede hacer con los datos pero no el cómo.
+      // Con esto conseguimos que si más adelante queremos cambiar MySQL por MongoDB o una API,
+      // no tengamos problemas.
+      |- Repositories >
+         |- IProductoRepository.php
+         |- IRolRepository.php
+         |- IUsuarioRepository.php
+      
+      // Clases con propiedades y sus getters-setters respectivos.
+      |- Entities >
+         |- ProductoEntity.php
+         |- RolEntity.php
+         |- UsuarioEntity.php
       |- Models >
-         |- CatalogoModel.php
-         |- ProductoModel.php
+         |- AutenticadorModel.php
+         |- ProductoManagerModel.php
+         |- UsuarioManagerModel.php
+         |- RolManagerModel.php
       |- Exceptions.php
    |- Infrastructure >
       |- Services >
@@ -110,7 +126,15 @@ CURSO
          |- Events >
             |- Listeners >
          |- Exceptions >
-         |- DatabaseConnection.php
+
+         // Adaptadores que conectan PHP con SQL.
+         |- Repositories >
+            |- MySQLProductoRepository.php   ===> Implementamos aquí, la interfaz del dominio. Escribimos los
+                                             ===> SELECT * FROM productos (por ejemplo).
+            |- MySQLRolRepository.php
+            |- MySQLUsuarioRepository.php
+         |- PDO >
+            |- DatabaseConnection.php
 
    |- bootstrap.php
    |- .htaccess
