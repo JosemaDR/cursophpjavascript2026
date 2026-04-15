@@ -5,6 +5,7 @@ require_once APP_ROOT . '/src/Infrastructure/Http/Controllers/BaseController.php
 require_once APP_ROOT . '/src/Application/Services/Login/LoginService.php';
 require_once APP_ROOT . '/src/Domain/Models/AutenticadorModel.php';
 require_once APP_ROOT . '/src/Infrastructure/Database/Repositories/MySQLUsuarioRepository.php';
+require_once APP_ROOT . '/src/Application/Views/View.php';
 
 class LoginController extends BaseController {
 

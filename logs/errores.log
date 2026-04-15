@@ -73,3 +73,59 @@ Stack trace:
 [15-Apr-2026 18:39:50 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
 [15-Apr-2026 18:43:45 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
 [15-Apr-2026 18:45:27 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:17:06 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:21:48 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Undefined array key "user_nombre" in D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php:25
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php(25): ErrorManager::{closure}(2, 'Undefined array...', 'D:\\CASTRAINING\\...', 25)
+#1 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\Views\View.php(10): require_once('D:\\CASTRAINING\\...')
+#2 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\Views\View.php(26): View::setHeaders()
+#3 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\BaseController.php(21): View::render('', false, Array)
+#4 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\InicioController.php(9): BaseController->renderView(Array)
+#5 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\BaseController.php(13): InicioController->index(Array)
+#6 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Routing\GestorRutas.php(41): BaseController->__construct(Array)
+#7 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php(31): GestorRutas::getController()
+#8 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once('D:\\CASTRAINING\\...')
+#9 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php on line 25
+[15-Apr-2026 20:21:48 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Undefined array key "user_nombre" in D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php:25
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php(25): ErrorManager::{closure}(2, 'Undefined array...', 'D:\\CASTRAINING\\...', 25)
+#1 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\Views\View.php(10): require_once('D:\\CASTRAINING\\...')
+#2 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\Views\View.php(26): View::setHeaders()
+#3 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\BaseController.php(21): View::render('', false, Array)
+#4 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\InicioController.php(9): BaseController->renderView(Array)
+#5 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\BaseController.php(13): InicioController->index(Array)
+#6 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Routing\GestorRutas.php(41): BaseController->__construct(Array)
+#7 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php(31): GestorRutas::getController()
+#8 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once('D:\\CASTRAINING\\...')
+#9 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php on line 25
+[15-Apr-2026 20:24:41 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Undefined array key "user_nombre" in D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php:25
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php(25): ErrorManager::{closure}(2, 'Undefined array...', 'D:\\CASTRAINING\\...', 25)
+#1 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\Views\View.php(10): require_once('D:\\CASTRAINING\\...')
+#2 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Application\Views\View.php(26): View::setHeaders()
+#3 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\BaseController.php(21): View::render('', false, Array)
+#4 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\InicioController.php(9): BaseController->renderView(Array)
+#5 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\BaseController.php(13): InicioController->index(Array)
+#6 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Routing\GestorRutas.php(41): BaseController->__construct(Array)
+#7 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php(31): GestorRutas::getController()
+#8 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once('D:\\CASTRAINING\\...')
+#9 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\public\templates\publicTemplates\header.generico.php on line 25
+[15-Apr-2026 20:31:10 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:31:16 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:31:48 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:38:37 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:47:57 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:48:23 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:57:29 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 20:59:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ContactarController" not found in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Routing\GestorRutas.php:41
+Stack trace:
+#0 D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\bootstrap.php(31): GestorRutas::getController()
+#1 D:\CASTRAINING\XAMPP82\htdocs\CURSO\index.php(4): require_once('D:\\CASTRAINING\\...')
+#2 {main}
+  thrown in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Routing\GestorRutas.php on line 41
+[15-Apr-2026 21:08:02 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 21:11:39 Europe/Berlin] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[15-Apr-2026 21:13:50 Europe/Berlin] PHP Fatal error:  ContactarController cannot implement BaseController - it is not an interface in D:\CASTRAINING\XAMPP82\htdocs\CURSO\src\Infrastructure\Http\Controllers\ContactarController.php on line 7

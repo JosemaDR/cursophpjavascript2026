@@ -26,6 +26,14 @@ class MySQLUsuarioRepository implements IUsuarioRepository {
       );
    }
 
+   public function findById(int $id): ?UsuarioEntity {
+      $stmt = $this->db->prepare("SELECT * FROM usuarios WHERE id = :id");
+      $stmt->execute(['id' => $id]);
+      $row = $stmt->fetch();
+
+      return $row ? new UsuarioEntity($row['id'], $row['usuario'], $row['clave'], $row['rol_id']) : null;
+   }
+
    public function save(UsuarioEntity $usuario): bool {
       $stmt = $this->db->prepare(
          "INSERT INTO usuarios (usuario, clave, role_id) VALUES (:u, :c, :r)"

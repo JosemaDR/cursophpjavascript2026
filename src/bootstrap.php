@@ -29,6 +29,3 @@
    LoginService::init();
 
    GestorRutas::getController();
-
-   // $conn = new PDOAPP();
-   // $conn->conectar();

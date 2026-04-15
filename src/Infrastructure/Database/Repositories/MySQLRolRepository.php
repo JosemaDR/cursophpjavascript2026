@@ -18,7 +18,6 @@ class MySQLRolRepository implements IRolRepository {
       while ($row = $stmt->fetch()) {
          $roles[] = new RolEntity($row['id'], $row['nombre']);
       }
-
       return $roles;
    }
 
