@@ -1,0 +1,15 @@
+- En DRIVE: carpeta DUDAS.FRECUENTES.ARQUITECTURA.OTROS (revisar contenidos cada cierto tiempo).
+	    documento: PHP.VS.JAVASCRIPT.ESTRUCTURAS.DE.CONTROL.html.
+	    documento: PHP.VS.JAVASCRIPT.TIPOS.DE.DATOS.html.
+
+- En la aplicación:
+	- Nuevas tablas.
+	- Diferentes ficheros de entidades para las nuevas tablas.
+	- Modelos para las nuevas tablas.
+	- Interfaces para las nuevas tablas.
+	- MySQL repositorios para las nuevas tablas.
+	- Servicios de aplicación nuevos.
+
+	- ¡OJO! No están todos y faltan algunas cosas. No me ha dado tiempo de más hasta ahora.
+
+Un abrazo.
