@@ -1,0 +1,1 @@
+alert('Respondiendo al evento de carga del código, dentro de ARCHIVO.JS');
